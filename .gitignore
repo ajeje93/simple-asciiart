@@ -17,6 +17,7 @@ node_modules
 undefined
 dist
 bin/
+.vscode
 
 # Mac
 .DS_Store
