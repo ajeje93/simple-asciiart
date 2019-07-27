@@ -1,4 +1,4 @@
-package asciiart;
+package org.asciiart;
 
 import org.fusesource.jansi.Ansi;
 import org.fusesource.jansi.AnsiConsole;

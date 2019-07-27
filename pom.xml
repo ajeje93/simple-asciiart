@@ -4,8 +4,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>asciiart</groupId>
-  <artifactId>asciiart</artifactId>
+  <groupId>org.asciiart</groupId>
+  <artifactId>simple-asciiart</artifactId>
   <version>1.0</version>
 
   <packaging>jar</packaging>
@@ -19,6 +19,7 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <jdk.version>1.8</jdk.version>
     <junit.version>4.11</junit.version>
+    <jansi.version>1.18</jansi.version>
   </properties>
 
   <dependencies>
@@ -30,7 +31,7 @@
     <dependency>
       <groupId>org.fusesource.jansi</groupId>
       <artifactId>jansi</artifactId>
-      <version>1.18</version>
+      <version>${jansi.version}</version>
     </dependency>
   </dependencies>
 
@@ -55,17 +56,6 @@
         </configuration>
       </plugin>
 
-      <!-- Set a compiler level -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.6.1</version>
-        <configuration>
-          <source>${jdk.version}</source>
-          <target>${jdk.version}</target>
-        </configuration>
-      </plugin>
-
       <!-- Maven Assembly Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -78,7 +68,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>asciiart.App</mainClass>
+              <mainClass>org.asciiart.App</mainClass>
             </manifest>
           </archive>
 

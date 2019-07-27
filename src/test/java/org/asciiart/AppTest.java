@@ -1,4 +1,4 @@
-package asciiart;
+package org.asciiart;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
