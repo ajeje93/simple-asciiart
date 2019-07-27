@@ -1,0 +1,26 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+#VSCode
+out
+server
+node_modules
+*.vsix
+.vscode-test
+undefined
+dist
+bin/
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
